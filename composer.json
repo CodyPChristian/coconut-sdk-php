@@ -1,0 +1,36 @@
+{
+  "name": "codypchristian/coconut-sdk-php",
+  "description": "Coconut for Laravel 5.0.x through 5.5.x package SDK for working with Coconut.co Video Encoding Service.",
+  "keywords": [
+    "laravel","coconut", "encoding", "video", "cloud", "heywatch"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cody P Christian",
+      "email": "cody@codypchristian.net",
+      "homepage": "http://codypchristian.net",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodyPChristian\\Coconut\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CodyPChristian\\Coconut\\CoconutServiceProvider"
+      ],
+      "aliases": {
+        "Coconut": "CodyPChristian\\Coconut\\Facades\\Coconut"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
